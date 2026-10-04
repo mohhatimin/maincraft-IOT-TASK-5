@@ -15,7 +15,8 @@ This repository contains the complete implementation, documentation, and source 
 - [Circuit Connections](#-circuit-connections)
 - [Source Code](#-source-code)
 - [Dashboard Setup](#-dashboard-setup)
-- [How to Run](#-how-to-run)
+- [Verification & System Output](#-verification--system-output)
+- [Key Learning Outcomes](#-key-learning-outcomes)
 
 ---
 
@@ -85,3 +86,24 @@ void setup() {
 void loop() {
   Blynk.run(); // Maintains active communication with Blynk server
 }
+```
+
+---
+
+## 📊 Dashboard Setup
+* **Platform:** Blynk IoT Console (`blynk.cloud`)
+* **Datastream Configured:** `Virtual Pin V0` (Integer, Min: 0, Max: 1)
+* **Widget:** Switch Widget mapped to `V0`
+
+---
+
+## 🔍 Verification & System Output
+* **Simulation Status:** Verified successfully on the Wokwi ESP32 Simulator.
+* **Real-time Performance:** Toggling the switch on the Blynk web console turns the simulated LED ON and OFF instantly.
+
+---
+
+## 🎯 Key Learning Outcomes
+* Implemented bi-directional IoT communication using Virtual Pins in Blynk.
+* Integrated cloud-based remote control with embedded hardware peripherals.
+* Configured and verified simulation workflows using Wokwi and Blynk cloud APIs.
